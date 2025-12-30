@@ -1,84 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Saurabh Kharade | Android Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body{
-      margin:0;
-      font-family:Arial, sans-serif;
-      background:#0f172a;
-      color:white;
-    }
-    header{
-      padding:60px 20px;
-      text-align:center;
-    }
-    h1{font-size:36px;margin-bottom:10px;}
-    h2{color:#38bdf8;}
-    section{
-      max-width:900px;
-      margin:auto;
-      padding:30px 20px;
-    }
-    .card{
-      background:#1e293b;
-      padding:20px;
-      border-radius:10px;
-      margin-bottom:20px;
-    }
-    a{color:#38bdf8;text-decoration:none;}
-  </style>
+<meta charset="UTF-8">
+<title>Saurabh Kharade | Senior Android Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0f172a;
+  --card:#1e293b;
+  --primary:#38bdf8;
+  --text:#e5e7eb;
+  --muted:#94a3b8;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+a{text-decoration:none;color:inherit}
+
+/* HERO */
+header{
+  padding:90px 20px;
+  text-align:center;
+  background:linear-gradient(135deg,#0f172a,#020617);
+}
+
+header h1{
+  font-size:42px;
+  font-weight:700;
+}
+
+header h2{
+  margin-top:8px;
+  color:var(--primary);
+  font-weight:500;
+}
+
+header p{
+  margin-top:14px;
+  color:var(--muted);
+}
+
+.hero-links{
+  margin-top:22px;
+}
+
+.hero-links a{
+  margin:0 10px;
+  color:var(--primary);
+  font-weight:500;
+}
+
+.hero-btn{
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 30px;
+  background:var(--primary);
+  color:#020617;
+  border-radius:30px;
+  font-weight:600;
+}
+
+/* SECTIONS */
+section{
+  max-width:1000px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+.section-title{
+  font-size:28px;
+  margin-bottom:30px;
+  border-left:4px solid var(--primary);
+  padding-left:14px;
+}
+
+/* CARDS */
+.card{
+  background:var(--card);
+  padding:24px;
+  border-radius:14px;
+  margin-bottom:24px;
+}
+
+/* SKILLS */
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.skill{
+  padding:8px 14px;
+  border-radius:20px;
+  background:#020617;
+  border:1px solid #334155;
+  font-size:14px;
+}
+
+/* PROJECTS */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.project{
+  background:#020617;
+  padding:20px;
+  border-radius:14px;
+  border:1px solid #334155;
+}
+
+.project h3{
+  color:var(--primary);
+  margin-bottom:8px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:40px 20px;
+  color:var(--muted);
+  border-top:1px solid #1e293b;
+}
+</style>
 </head>
+
 <body>
 
+<!-- HERO -->
 <header>
   <h1>Saurabh Babu Kharade</h1>
   <h2>Senior Android Developer</h2>
-  <p>Android | Flutter | MVVM | Clean Architecture</p>
-  <p>
-    <a href="mailto:saurabhkharade2@gmail.com">Email</a> |
-    <a href="https://linkedin.com/in/saurabh-kharade" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/saurabhkharade" target="_blank">GitHub</a>
-  </p>
+  <p>Android • Flutter • MVVM • Clean Architecture • Offline-first Apps</p>
+
+  <div class="hero-links">
+    <a href="mailto:saurabhkharade2@gmail.com">📧 Email</a>
+    <a href="https://linkedin.com/in/saurabh-kharade" target="_blank">💼 LinkedIn</a>
+    <a href="https://github.com/saurabhkharade" target="_blank">🐙 GitHub</a>
+  </div>
+
+  <a href="mailto:saurabhkharade2@gmail.com" class="hero-btn">
+    Hire Me 🚀
+  </a>
 </header>
 
+<!-- ABOUT -->
 <section>
+  <h2 class="section-title">About Me</h2>
   <div class="card">
-    <h2>About Me</h2>
     <p>
-      Results-driven Senior Android Developer with 4+ years of experience
-      building scalable and offline-first mobile applications.
+      Results-driven <strong>Senior Android Developer</strong> with 4+ years of experience
+      building scalable, secure, and offline-first mobile applications across
+      insurance, enterprise services, and field-force automation domains.
     </p>
-  </div>
-
-  <div class="card">
-    <h2>Skills</h2>
-    <p>
-      Java, Dart, Flutter, Android SDK, MVVM, Clean Architecture,
-      Room, SQLite, Firebase
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>Experience</h2>
-    <p>
-      <strong>Sudesi Infotech Pvt. Ltd.</strong><br>
-      Senior Android Developer (2021 – Present)
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>Projects</h2>
-    <ul>
-      <li>Krishak Sathi – SBI Insurance</li>
-      <li>Hafele SMART App</li>
-      <li>Vertiv Service Care</li>
-      <li>Aarti Sangrah (30K+ downloads)</li>
-    </ul>
   </div>
 </section>
+
+<!-- SKILLS -->
+<section>
+  <h2 class="section-title">Technical Skills</h2>
+  <div class="card skills">
+    <span class="skill">Java</span>
+    <span class="skill">Dart</span>
+    <span class="skill">Android SDK</span>
+    <span class="skill">Flutter</span>
+    <span class="skill">MVVM</span>
+    <span class="skill">Clean Architecture</span>
+    <span class="skill">Room</span>
+    <span class="skill">SQLite</span>
+    <span class="skill">Firebase</span>
+    <span class="skill">REST APIs</span>
+    <span class="skill">Offline-first</span>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section>
+  <h2 class="section-title">Experience</h2>
+  <div class="card">
+    <h3>Sudesi Infotech Pvt. Ltd.</h3>
+    <p>Senior Android Developer | 2021 – Present</p>
+    <p style="color:var(--muted)">
+      Leading end-to-end Android development, performance optimization,
+      offline sync solutions, and enterprise-scale apps.
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+  <h2 class="section-title">Key Projects</h2>
+
+  <div class="projects">
+    <div class="project">
+      <h3>Krishak Sathi</h3>
+      <p>SBI Insurance app for farmers with offline data sync.</p>
+    </div>
+
+    <div class="project">
+      <h3>Hafele SMART App</h3>
+      <p>Smart home automation Android application.</p>
+    </div>
+
+    <div class="project">
+      <h3>Vertiv Service Care</h3>
+      <p>Field-force service management solution.</p>
+    </div>
+
+    <div class="project">
+      <h3>Aarti Sangrah</h3>
+      <p>30K+ downloads devotional Android app.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Saurabh Kharade • Android Developer
+</footer>
 
 </body>
 </html>
