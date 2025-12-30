@@ -1,232 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Saurabh Kharade | Senior Android Developer</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<title>Saurabh Kharade — Senior Android Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta name="description"
+content="Senior Android Developer with 4+ years experience building secure,
+offline-first enterprise Android and Flutter applications." />
+
+<meta name="author" content="Saurabh Kharade" />
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 :root{
-  --bg:#0f172a;
-  --card:#1e293b;
-  --primary:#38bdf8;
+  --bg:#0b1220;
+  --panel:#111827;
+  --border:#1f2937;
   --text:#e5e7eb;
-  --muted:#94a3b8;
+  --muted:#9ca3af;
+  --accent:#38bdf8;
 }
 
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-
+*{margin:0;padding:0;box-sizing:border-box}
 body{
+  font-family:Inter, system-ui, sans-serif;
   background:var(--bg);
   color:var(--text);
-  line-height:1.6;
+  line-height:1.65;
 }
 
-a{text-decoration:none;color:inherit}
-
-/* HERO */
-header{
-  padding:90px 20px;
-  text-align:center;
-  background:linear-gradient(135deg,#0f172a,#020617);
+.wrapper{
+  max-width:980px;
+  margin:auto;
+  padding:80px 24px;
 }
 
-header h1{
-  font-size:42px;
-  font-weight:700;
-}
+/* TYPOGRAPHY */
+h1{font-size:36px;font-weight:600}
+h2{font-size:20px;margin-bottom:14px}
+h3{font-size:16px;margin-bottom:6px}
+p{color:var(--muted)}
+section{margin-bottom:64px}
 
-header h2{
-  margin-top:8px;
-  color:var(--primary);
-  font-weight:500;
+/* HEADER */
+.header{
+  border-bottom:1px solid var(--border);
+  padding-bottom:40px;
+  margin-bottom:60px;
 }
-
-header p{
-  margin-top:14px;
+.role{color:var(--accent);margin-top:6px}
+.meta{
+  margin-top:16px;
+  font-size:14px;
   color:var(--muted);
 }
 
-.hero-links{
-  margin-top:22px;
+/* PANELS */
+.panel{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:28px;
 }
 
-.hero-links a{
-  margin:0 10px;
-  color:var(--primary);
-  font-weight:500;
-}
+/* LISTS */
+ul{margin-left:18px;color:var(--muted)}
+li{margin-bottom:6px}
 
-.hero-btn{
-  display:inline-block;
-  margin-top:30px;
-  padding:14px 30px;
-  background:var(--primary);
-  color:#020617;
-  border-radius:30px;
-  font-weight:600;
-}
-
-/* SECTIONS */
-section{
-  max-width:1000px;
-  margin:auto;
-  padding:60px 20px;
-}
-
-.section-title{
-  font-size:28px;
-  margin-bottom:30px;
-  border-left:4px solid var(--primary);
-  padding-left:14px;
-}
-
-/* CARDS */
-.card{
-  background:var(--card);
-  padding:24px;
-  border-radius:14px;
-  margin-bottom:24px;
-}
-
-/* SKILLS */
-.skills{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-}
-
-.skill{
-  padding:8px 14px;
-  border-radius:20px;
-  background:#020617;
-  border:1px solid #334155;
-  font-size:14px;
-}
-
-/* PROJECTS */
-.projects{
+/* GRID */
+.grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
 }
 
+/* PROJECT */
 .project{
-  background:#020617;
-  padding:20px;
-  border-radius:14px;
-  border:1px solid #334155;
+  margin-bottom:40px;
 }
-
-.project h3{
-  color:var(--primary);
+.project:last-child{margin-bottom:0}
+.project .title{font-weight:500}
+.project .context{
+  font-size:14px;
+  color:var(--muted);
   margin-bottom:8px;
 }
 
 /* FOOTER */
 footer{
-  text-align:center;
-  padding:40px 20px;
+  border-top:1px solid var(--border);
+  padding-top:32px;
   color:var(--muted);
-  border-top:1px solid #1e293b;
+  font-size:14px;
+}
+
+/* MOBILE */
+@media(max-width:720px){
+  h1{font-size:30px}
+  .grid{grid-template-columns:1fr}
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<header>
+<div class="wrapper">
+
+<!-- HEADER -->
+<header class="header">
   <h1>Saurabh Babu Kharade</h1>
-  <h2>Senior Android Developer</h2>
-  <p>Android • Flutter • MVVM • Clean Architecture • Offline-first Apps</p>
+  <div class="role">Senior Android Developer</div>
 
-  <div class="hero-links">
-    <a href="mailto:saurabhkharade2@gmail.com">📧 Email</a>
-    <a href="https://linkedin.com/in/saurabh-kharade" target="_blank">💼 LinkedIn</a>
-    <a href="https://github.com/saurabhkharade" target="_blank">🐙 GitHub</a>
+  <div class="meta">
+    Navi Mumbai, India · saurabhkharade2@gmail.com <br>
+    Android · Java · Flutter · MVVM · Clean Architecture
   </div>
-
-  <a href="mailto:saurabhkharade2@gmail.com" class="hero-btn">
-    Hire Me 🚀
-  </a>
 </header>
 
-<!-- ABOUT -->
+<!-- SUMMARY -->
 <section>
-  <h2 class="section-title">About Me</h2>
-  <div class="card">
+  <div class="panel">
+    <h2>Professional Summary</h2>
     <p>
-      Results-driven <strong>Senior Android Developer</strong> with 4+ years of experience
-      building scalable, secure, and offline-first mobile applications across
-      insurance, enterprise services, and field-force automation domains.
+      Results-driven Senior Android Developer with 4+ years of experience
+      building scalable, secure, and high-performance mobile applications
+      across insurance, enterprise services, and field-force automation domains.
+      Strong expertise in offline-first systems, performance optimization,
+      and production stability.
     </p>
   </div>
 </section>
 
 <!-- SKILLS -->
 <section>
-  <h2 class="section-title">Technical Skills</h2>
-  <div class="card skills">
-    <span class="skill">Java</span>
-    <span class="skill">Dart</span>
-    <span class="skill">Android SDK</span>
-    <span class="skill">Flutter</span>
-    <span class="skill">MVVM</span>
-    <span class="skill">Clean Architecture</span>
-    <span class="skill">Room</span>
-    <span class="skill">SQLite</span>
-    <span class="skill">Firebase</span>
-    <span class="skill">REST APIs</span>
-    <span class="skill">Offline-first</span>
+  <div class="panel">
+    <h2>Technical Expertise</h2>
+
+    <div class="grid">
+
+      <div>
+        <h3>Languages & Frameworks</h3>
+        <ul>
+          <li>Java, Dart, Python (Basics)</li>
+          <li>Android SDK, Flutter</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Architecture</h3>
+        <ul>
+          <li>MVVM, Clean Architecture</li>
+          <li>Repository Pattern</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Data & Storage</h3>
+        <ul>
+          <li>Room, SQLite</li>
+          <li>MS SQL Server</li>
+          <li>Hive (Flutter)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>APIs & Services</h3>
+        <ul>
+          <li>REST APIs</li>
+          <li>Firebase (FCM, Analytics)</li>
+          <li>Google Maps</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Performance & Security</h3>
+        <ul>
+          <li>APK optimization, App Bundles</li>
+          <li>ProGuard / R8</li>
+          <li>SSL Pinning, MITM protection</li>
+          <li>Memory leak & OOM resolution</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>DevOps & Tooling</h3>
+        <ul>
+          <li>Android Studio, Git</li>
+          <li>GitHub Actions</li>
+          <li>Postman, Play Console</li>
+        </ul>
+      </div>
+
+    </div>
   </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section>
-  <h2 class="section-title">Experience</h2>
-  <div class="card">
+  <div class="panel">
+    <h2>Professional Experience</h2>
+
     <h3>Sudesi Infotech Pvt. Ltd.</h3>
-    <p>Senior Android Developer | 2021 – Present</p>
-    <p style="color:var(--muted)">
-      Leading end-to-end Android development, performance optimization,
-      offline sync solutions, and enterprise-scale apps.
-    </p>
+    <p class="context">Senior Android Developer · Nov 2021 — Present</p>
+
+    <ul>
+      <li>Designed and developed enterprise-grade Android applications using MVVM and Clean Architecture</li>
+      <li>Built offline-first solutions for low-connectivity environments</li>
+      <li>Resolved critical OOM and memory leak issues to improve app stability</li>
+      <li>Optimized APK size using modularization, ProGuard, and App Bundles</li>
+      <li>Led release cycles, code reviews, and mentored junior developers</li>
+      <li>Worked closely with product owners, QA, and backend teams in Agile/Scrum setup</li>
+    </ul>
   </div>
 </section>
 
 <!-- PROJECTS -->
 <section>
-  <h2 class="section-title">Key Projects</h2>
+  <div class="panel">
+    <h2>Key Projects</h2>
 
-  <div class="projects">
     <div class="project">
-      <h3>Krishak Sathi</h3>
-      <p>SBI Insurance app for farmers with offline data sync.</p>
+      <div class="title">Krishak Sathi (Android) & Krishak (Flutter) — SBI General Insurance</div>
+      <div class="context">Mobile insurance claim management system for farmers</div>
+      <ul>
+        <li>Implemented offline-first claim workflows with geotagging and image capture</li>
+        <li>Designed background sync to handle unreliable network conditions</li>
+        <li>Reduced claim processing turnaround time via digitized workflows</li>
+      </ul>
     </div>
 
     <div class="project">
-      <h3>Hafele SMART App</h3>
-      <p>Smart home automation Android application.</p>
+      <div class="title">Hafele SMART App — Project Lead</div>
+      <div class="context">Enterprise site-visit planning & reporting platform</div>
+      <ul>
+        <li>Enabled scheduling, collaboration, and automated report generation</li>
+        <li>Led Android implementation and release management</li>
+      </ul>
     </div>
 
     <div class="project">
-      <h3>Vertiv Service Care</h3>
-      <p>Field-force service management solution.</p>
+      <div class="title">AFLI Sales — IDBI Bank</div>
+      <div class="context">Secure sales enablement application</div>
+      <ul>
+        <li>Implemented secure SDK to protect data against MITM attacks</li>
+        <li>Focused on performance and data security</li>
+      </ul>
     </div>
 
     <div class="project">
-      <h3>Aarti Sangrah</h3>
-      <p>30K+ downloads devotional Android app.</p>
+      <div class="title">Vertiv Service Care — Project Lead</div>
+      <div class="context">QR-based complaint logging application (Flutter)</div>
+      <ul>
+        <li>Enabled instant issue reporting without customer support dependency</li>
+        <li>Designed lightweight and scalable complaint workflows</li>
+      </ul>
     </div>
+
+    <div class="project">
+      <div class="title">Mobe-Asset (Flutter) — Project Lead</div>
+      <div class="context">Mobile asset management system</div>
+      <ul>
+        <li>GPS-based tracking and audit-ready workflows</li>
+        <li>Offline-first architecture with background sync</li>
+      </ul>
+    </div>
+
   </div>
 </section>
 
-<footer>
-  © 2025 Saurabh Kharade • Android Developer
+<!-- PERSONAL -->
+<section>
+  <div class="panel">
+    <h2>Personal Projects</h2>
+    <ul>
+      <li>Aarti Sangrah (Flutter) — 30K+ downloads, 4.6 rating</li>
+      <li>SQLite Viewer — lightweight developer utility</li>
+      <li>ProgrammingKeeda.com — technical blog for Android & Flutter</li>
+    </ul>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section>
+  <div class="panel">
+    <h2>Education</h2>
+    <ul>
+      <li>BCA — Amity University Online (Pursuing, 2025)</li>
+      <li>Diploma in IT — DBATU (2017)</li>
+      <li>HSC — Raja Bhau Mone Jr. College (2015)</li>
+      <li>SSC — N. M. Joshi Vidyabhavan (2013)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CERTIFICATION -->
+<section>
+  <div class="panel">
+    <h2>Certification</h2>
+    <p>Advanced Android App Development — St. Angelo’s Professional Education, Thane</p>
+  </div>
+</section>
+
+<footer style="margin-top:80px;color:#9ca3af;font-size:14px">
+  Available for senior Android engineering roles focused on scalable systems
+  and long-term product impact ·
+  <a href="https://www.linkedin.com/in/saurabh-kharade"
+     target="_blank"
+     style="color:#38bdf8">
+    Let’s connect
+  </a>
 </footer>
+
+
+</div>
 
 </body>
 </html>
